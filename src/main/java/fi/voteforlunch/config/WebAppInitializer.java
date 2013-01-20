@@ -21,5 +21,4 @@ public class WebAppInitializer implements WebApplicationInitializer {
         dispatcher.setLoadOnStartup(1);
         dispatcher.addMapping("/voteforlunch/*");
     }
-
 }
