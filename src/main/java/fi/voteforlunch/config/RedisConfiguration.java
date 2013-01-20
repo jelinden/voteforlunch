@@ -27,8 +27,7 @@ public class RedisConfiguration {
   @Bean
   public RedisConnectionFactory redisConnectionFactory() {
     JedisConnectionFactory cf = new JedisConnectionFactory();
-    //TODO: profile should never be null
-    if (profile != null && profile.equals("dev")) {
+    if (profile.equals("dev")) {
       cf.setHostName("localhost");
       cf.setPort(6379);
     } else {
