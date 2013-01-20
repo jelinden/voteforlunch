@@ -16,7 +16,7 @@ This only offers a starting point. The purpose is to make a fully working progra
 Requirements
 =============
 
-- User has to be able to add restaurants. Restaurant name, 0-5 stars(one vote per user), web address for lunch listing and a street address
+- User has to be able to add restaurants. Restaurant name, 0-5 stars, web address for lunch listing and a street address
 - User has to be able to vote for his or hers favorite lunch place for today
 - Between all users the chosen restaurant is the one which got most votes
 - The current lunch place to be chosen should be shown at all times (unless there are no votes)
@@ -24,6 +24,7 @@ Requirements
 Additional/voluntary requirements
 =======================
 
+- Simple Signup/Login, 0-5 stars(one vote per user) for restaurant. Restaurants can't be added or be modified without being loggedin
 - When choosing the restaurant to be chosen, in a draw, take the stars given to the restaurants into account
 - Show the restaurants in a map
 - Give the user the ability to give the restaurants individual scoring and take that into account when choosing the lunch place
