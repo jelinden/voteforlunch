@@ -2,7 +2,7 @@ var User = Backbone.Model.extend({})
 
 var UserStore = Backbone.Collection.extend({
   model: User,
-  url: 'http://localhost:8080/voteforlunch/user'
+  url: '/voteforlunch/user'
 })
 
 var user = new UserStore
