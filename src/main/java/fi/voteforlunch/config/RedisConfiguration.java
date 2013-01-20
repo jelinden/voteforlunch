@@ -33,7 +33,7 @@ public class RedisConfiguration {
       cf.setPort(6379);
     } else {
       try {
-        URI redisUri = new URI(System.getenv("REDISCLOUD_URL"));
+        URI redisUri = new URI(System.getenv("REDISTOGO_URL"));
         cf.setPoolConfig(new JedisPoolConfig());
         cf.setHostName(redisUri.getHost());
         cf.setPort(redisUri.getPort());
