@@ -160,6 +160,20 @@
 							<goal>sources</goal>
 						</goals>
 					</execution>
+					<execution>
+            <phase>package</phase>
+            <goals><goal>copy</goal></goals>
+            <configuration>
+                <artifactItems>
+                    <artifactItem>
+                        <groupId>org.mortbay.jetty</groupId>
+                        <artifactId>jetty-runner</artifactId>
+                        <version>8.1.2.v20120308</version>
+                        <destFileName>jetty-runner.jar</destFileName>
+                    </artifactItem>
+                </artifactItems>
+            </configuration>
+        </execution>
 				</executions>
 			</plugin>
 			<plugin>
@@ -205,9 +219,6 @@
 	 <profiles>
     <profile>
       <id>dev</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <build>
         <resources>
           <resource>
@@ -218,6 +229,9 @@
     </profile>
     <profile>
       <id>prod</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <build>
         <resources>
           <resource>
